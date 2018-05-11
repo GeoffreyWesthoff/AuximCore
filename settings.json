@@ -1,0 +1,9 @@
+{
+  "token": "yourtoken",
+  "description": "Just some bot",
+  "prefix": "!",
+  "perms": "0",
+  "status": "your description",
+  "dbl_key": "dblapikey",
+  "bfd_key": "bfdapikey"
+}
