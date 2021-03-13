@@ -32,7 +32,7 @@ class Bot(commands.AutoShardedBot):
         bot.remove_command('help')
 
         # Set status
-        await self.change_presence(game=discord.Game(name=status))
+        await self.change_presence(activity=discord.Game(name=status))
         for file in os.listdir('modules/events'):
             # Load invisible cogs
             direc = 'modules.events.'
