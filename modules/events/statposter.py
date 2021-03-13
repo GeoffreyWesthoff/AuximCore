@@ -1,9 +1,10 @@
 from modules.utils import DatabaseHandler, SettingsLoader
 import asyncio
 import json
+from discord.ext import commands
 
 
-class StatPoster:
+class StatPoster(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
         self.dbl_header = {'Authorization': SettingsLoader.config['dbl_key'], 'content-type': 'application/json'}
